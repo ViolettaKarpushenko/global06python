@@ -5,6 +5,7 @@ class TestSuccess(HelloWorldLambdaTestCase):
 
     def test_success(self):
         self.assertEqual(self.HANDLER.handle_request(dict(), dict()), {
-            'code': 200,
-            'body': 'Hello from Lambda'
+            'statusCode': 200,
+            'message': 'Hello from Lambda'
         })
+
